@@ -1,0 +1,24 @@
+# Most of these are already installed on Kaggle; pip skips them.
+# torch is NOT listed on purpose: use the version that comes with Kaggle.
+transformers>=4.51
+accelerate
+peft
+bitsandbytes; platform_system == "Linux"   # 4-bit loading of the 8B model on a single GPU (Colab)
+sentencepiece
+huggingface_hub
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+openpyxl
+python-docx
+nltk
+bert-score
+sentence-transformers
+datasketch
+indic-transliteration
+wordfreq
+feedparser
+trafilatura
+requests

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+factindic_out/
+tiny_models/
+.ipynb_checkpoints/
+*.egg-info/
+
+# never commit credentials
+kaggle.json
+.env

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factindic"
+version = "1.0.0"
+description = "Factuality-aware summarisation for Hindi, Bengali and code-mixed input (CSET346 NLP project, Team FactForge)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "transformers>=4.51", "accelerate", "peft", "sentencepiece", "huggingface_hub", "pandas", "numpy", "scipy",
+  "scikit-learn", "matplotlib", "openpyxl", "python-docx", "nltk", "bert-score", "sentence-transformers", "datasketch",
+  "indic-transliteration", "wordfreq", "feedparser", "trafilatura", "requests",
+]
+
+[tool.setuptools]
+packages = ["factindic"]
+
+[tool.setuptools.package-data]
+factindic = ["assets/*.png"]
